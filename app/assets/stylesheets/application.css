@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+table thead td {
+    font-weight: bold;
+    font-size: larger;
+}
+table td {
+    padding: 2px 8px;
+}
