@@ -3,5 +3,9 @@ module Services
     def all_albums
       album_storage.all_albums
     end
+
+    def search_by_genre(genre)
+      album_storage.search_by_genre(genre)
+    end
   end
 end
