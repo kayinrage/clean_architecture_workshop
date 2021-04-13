@@ -1,7 +1,9 @@
 module Clients
   class AlbumClient
     def all_albums
-      # TODO: implement me :)
+      JSON.parse(fake_api_response).map do |album|
+        AlbumFromApi.new(album['name'], album['genre_name'], album['band_name_with_id'])
+      end
     end
 
     private

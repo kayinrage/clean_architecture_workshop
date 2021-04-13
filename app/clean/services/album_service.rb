@@ -1,7 +1,7 @@
 module Services
   class AlbumService < BusinessService
     def all_albums
-      album_storage.all_albums
+      album_client.all_albums
     end
 
     def search_by_genre(genre)

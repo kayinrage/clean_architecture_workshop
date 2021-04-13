@@ -15,6 +15,10 @@ module Services
       @user
     end
 
+    def album_client
+      engine.album_client
+    end
+
     def album_storage
       engine.album_store
     end
